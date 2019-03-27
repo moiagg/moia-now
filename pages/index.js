@@ -1,17 +1,9 @@
-import Link from "next/link";
-import Header from "../components/header";
-
-function Index() {
-  return (
-    <main>
-      <Header />
-      <section>
-        <Link href="/about">
-          <a>Go to About Me</a>
-        </Link>
-      </section>
-    </main>
-  );
-}
+import { Template } from "../src/components/common";
+import Link from 'next/link';
+const Index = () => (
+  <Template className={"container mx-auto mt-5 h-100"}>
+    <h1 className="text-center">Welcome to Moia Now</h1>
+  </Template>
+);
 
 export default Index;
